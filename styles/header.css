@@ -1,0 +1,10 @@
+.herotxt {
+    font-size: 72px;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 600px;
+    left: 260px;
+    opacity: .7;
+    color: teal;
+}
