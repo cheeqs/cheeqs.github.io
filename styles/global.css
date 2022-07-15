@@ -9,10 +9,11 @@
     text-decoration: none;
 }
 
-body {
-    background-color: #66A3BB;
+html {
+    overflow-y: scroll;
 }
 
-main {
-    height: 60%;
+body {
+    background-color: #66A3BB;
+    min-height: 100vh;
 }

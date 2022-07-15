@@ -1,0 +1,30 @@
+.gallery-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    margin: 0 auto;
+    padding: 30px 5px 5px 10px;
+    overflow: hidden;
+    justify-content: center;
+    z-index: -1;
+}
+
+.thumbnail {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10%;
+    transition: .7s ease;
+    box-shadow: 8px 8px rgba(0, 0, 0, .15);
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.thumbnail:hover {
+    height: 300px;
+    width: 300px;
+    box-shadow: 16px 16px rgba(0, 0, 0, .15);
+}

@@ -7,6 +7,7 @@ header {
     width: 100%;
     height: 6%;
     position: fixed;
+    z-index: 1;
 }
 
 .nav-bar {
@@ -14,12 +15,13 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    /* background-color: aquamarine; */
+    background-color: #66A3BB;
+    height: 43px;
 }
 
 .logo-img {
-    width: 260px;
-    height: 100%;
+    width: 240px;
+    height: 43px;
 }
 
 nav li {
@@ -72,4 +74,8 @@ li a {
 
 .online {
     color: greenyellow;
+}
+
+.block-div {
+    display: block;
 }
