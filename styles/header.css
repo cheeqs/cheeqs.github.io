@@ -1,10 +1,75 @@
-.herotxt {
-    font-size: 72px;
-    font-family: 'Dosis', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    position: absolute;
-    top: 600px;
-    left: 260px;
-    opacity: .7;
-    color: teal;
+/*    
+font-family: 'Dosis', sans-serif;
+   font-family: 'Poppins', sans-serif;
+   66A3BB,253A47 
+    */
+header {
+    width: 100%;
+    height: 6%;
+    position: fixed;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* background-color: aquamarine; */
+}
+
+.logo-img {
+    width: 260px;
+    height: 100%;
+}
+
+nav li {
+    display: flex;
+    list-style: none;
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    height: 100%;
+    background-color: #253a4738;
+    color: #253A47;
+}
+
+.nav-item {
+    transition: background-color .25s;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    background-color: #253a4738;
+    color: #253a4738;
+}
+
+.nav-item:visited {
+    color: #253a47;
+}
+
+.nav-item:active {
+    background-color: #346481;
+}
+
+.nav-list {
+    padding-left: 0px;
+}
+
+.status {
+    display: inline;
+    justify-content: flex-end;
+    margin-left: auto;
+    padding-right: 10px;
+}
+
+.status p,
+.status span {
+    font-size: 16px;
+}
+
+.online {
+    color: greenyellow;
 }

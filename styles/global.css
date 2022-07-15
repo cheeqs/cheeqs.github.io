@@ -3,15 +3,16 @@
 ::before {
     border: 0;
     margin: 0;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
 }
 
-
 body {
-    height: 100%;
-    width: 100%;
-    background-image: url("/imgs/server-icon.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 250px 250px;
+    background-color: #66A3BB;
+}
+
+main {
+    height: 60%;
 }
