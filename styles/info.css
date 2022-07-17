@@ -1,0 +1,117 @@
+.container-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 10%;
+    margin: 0 auto;
+    width: 40%;
+    border-radius: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #253a473f;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    row-gap: 5px;
+}
+
+main {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    justify-content: center;
+
+}
+
+h1 {
+    font-size: 3em;
+    position: absolute;
+    display: block;
+
+}
+
+.divider {
+    height: 0px;
+    border: 1px double #253a4777;
+}
+
+.lg {
+    width: 80%;
+}
+
+.sm {
+    width: 40%;
+}
+
+.sm-txt {
+    font-size: .7rem;
+}
+
+.section-header {
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-header:not(:first-of-type) {
+    padding-top: 30px;
+}
+
+.rules-list li {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 3px;
+}
+
+.rules-list {
+    overflow: hidden;
+    width: 90%;
+}
+
+.sub-list {
+    padding-left: 0;
+}
+
+.copy-logo {
+    height: 26px;
+    width: 26px;
+    align-content: center;
+}
+
+.txt-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.copyimg {
+    margin-left: 10px;
+}
+
+.container-main p {
+    display: inline;
+}
+
+.info {
+    width: 80%;
+    text-align: center;
+}
+
+.thumbnail {
+    margin-top: 15px;
+    height: 200px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 5%;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+p::first-letter {
+    font-size: 19px;
+}

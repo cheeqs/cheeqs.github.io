@@ -8,10 +8,22 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/info.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Poppins:wght@500&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+    <script>
+        function CopyToClipboard(id)
+        {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(id));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -46,9 +58,125 @@
             </div>
         </nav>
     </header>
-
+    <div class="header-fill"></div>
     <main>
-        
+        <h1 class="header">Info</h1>
+        <div class="container-main">
+            <div class="section-header">
+                <div class="divider lg"></div>
+                    <h2>Rules</h2>
+                <div class="divider lg"></div>
+            </div>
+            <ul class="rules-list">
+                <li>No griefing or stealing from players. Pranking is allowed but don't go overboard.</li>
+                <li>X-Ray is <span class="bold underline">not</span> allowed</li>
+                <li>No language on this server is regulated. All forms of speech are allowed.</li>
+                <li>TNT duping is allowed</li>
+                <li>Gravity block duping is allowed</li>
+                <li>Carpet and rail duping are allowed</li>
+                <li>ALL other forms of duping are <span class="bold underline">not</span> allowed</li>
+                <li>Client side addons that are allowed:
+                    <ul class="sub-list">
+                        <li>Litematica</li>
+                        <li>Full bright</li>
+                        <li>Minihud</li>
+                        <li>Tweakeroo</li>
+                        <li>Safe Walk</li>
+                        <li>Minimaps, including waypoints</li>
+                        <li>Replay mod</li>
+                        <li>Shulker tool tips</li>
+                        <li>Auto clickers</li>
+                    </ul>
+                </li>
+                <li>Client side plugins that are <span class="bold underline">not</span> allowed:
+                    <ul class="sub-list lg">
+                        <li>Kill aura</li>
+                        <li>Flyhack</li>
+                        <li>Baritone bot</li>
+                        <li>Freecam</li>
+                        <li>Any 3rd party addons admins deem to be cheating</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="section-header">
+                <div class="divider lg"></div>
+                    <h2>Joining the server</h2>
+                <div class="divider lg"></div>
+            </div>
+            <div class="txt-container">
+                <p class="copy-logo bold">IP:</p> <span class="bold" id="ip-address">bestpalsclub.apexmc.co</span>
+                <a class="copy-logo" href="#" onclick="CopyToClipboard('ip-address');return false;" title="Copy to Clipboard"><img class="copy-logo copyimg" src="imgs/copy.png" alt="copy button"></a>
+            </div>
+            <p>Whitelist is off, and anyone can join.</p>
+            <p>Owners: Vixily and Cheeqs</p>
+            <div class="section-header">
+                <div class="divider lg"></div>
+                    <h2>Commands</h2>
+                <div class="divider lg"></div>
+            </div>
+                <ul class="rules-list">
+                    <li><span class="bold">/trash</span> - Open an inventory to delete trash</li>
+                    <li><span class="bold">/home</span> - Takes you to the bed you've set for your spawn point. If you haven't set a bed, it will take you to world spawn.</li>
+                    <li><span class="bold">/back</span> - Takes you to the last place you teleported from.</li>
+                    <li><span class="bold">/astools</span> - Replace inventory with armor stand tools, type again to restore inventory </li>
+                    <li><span class="bold">/craft</span> - Opens up the 3x3 crafting grid without using a crafting table. </li>
+                    <li><span class="bold">/condense</span> - Compresses most compressable items in your inventory, e.g. ingots to blocks  </li>
+                    <li><span class="bold">/itf togglemode</span> - shift right click item frames to make them invisible </li>
+                    <li><span class="bold">/es</span> - edit sign mode, shift right click with an empty hand on sign to edit </li>
+                    <li><span class="bold">/beezooka</span> and <span class="bold">/kittycannon</span> - For fun</li>
+                    <li><span class="bold">/kit</span> - get various items with a cooldown, options are "color", "notch", and "firework"</li>
+                    <li><span class="bold">{item}</span> - displays the item held in your hand to chat.</li>
+                    <li><span class="bold">//wand</span> - gives you a wooden axe that you can use to set points for claims</li>
+                    <li><span class="bold">/region claim &#60;claim name&#62;</span></id> - claims the area selected by your wand <span class="sm-txt">(hint: get the WorldEditCUI mod)</span></li>
+                    <li><span class="bold">/warp tutorial</span> - Warps you to a short tutorial on how to begin with slimefun</li>
+                    
+
+
+
+
+                    <li><span class="bold">CHEST LOCKING</span> - Chests, doors, furnaces, fence gates etc... can be locked by shift right clicking with an empty hand. and selecting "lock". You can add players to the whitelist by clicking "Manage Friends", "Search player" (bottom right), typing in the name to search in the text bar and clicking the renamed paper that it makes. 
+                </ul>
+                <div class="section-header">
+                    <div class="divider lg"></div>
+                        <h2>Economy</h2>
+                    <div class="divider lg"></div>
+                </div>
+                    <div class="section-header">
+                        <div class="divider sm"></div>
+                            <h3>Chest Shops</h3>
+                        <div class="divider sm"></div>
+                    </div>
+                    <p class="info"><span class="bold">Buying</span> - To purchase from a chest shop, right click the sign.  You must have enough funds to purchase from any chest shop. You may also right click the container to view more information on what's being sold or bought.</p>
+                    <p class="info"><span class="bold">Selling</span> - To create a chest shop, edit a sign on the shop container in this format: first line blank, second line quantity of item, third line ("B" or "S") "cost of item", fourth line "?" then click done. Example:</p>
+                    <img class="thumbnail" src="gallery/unknown (62).png" alt="chest shop example">
+                    <div class="section-header">
+                        <div class="divider sm"></div>
+                            <h3>Jobs & Earning</h3>
+                        <div class="divider sm"></div>
+                    </div>
+                    <p class="info">To earn money, type "/jobs browse" and right click up to 3 jobs to select them. Once you've done this, you may start earning money by doing specific tasks. </p>
+                    <p class="info">In the "/jobs browse" menu, left click the job you chose and hover over the icons. This will show you your job tasks and how much they pay out.</p>
+                    <p class="info">To check your balance, type /bal  (this money is the server currency and what we will be using for the chest shops in the shopping district)</p>
+                    <div class="section-header">
+                        <div class="divider sm"></div>
+                            <h3>Money usage</h3>
+                        <div class="divider sm"></div>
+                    </div>
+                    <p class="info">Claims do not cost anything on this server.</p>
+                    <p class="info">"/ah" will bring up the auction house. This will show items sold by other players.</p>
+                    <p class="info">"/warp shop" will teleport you to the shopping district, where player shops and NPC shops sell various goods for server currency.</p>
+                    <div class="section-header">
+                        <div class="divider lg"></div>
+                            <h2>1.19 info</h2>
+                        <div class="divider lg"></div>
+                    </div>
+                    <p class="info">With the release of 1.19, the world (which was generated pre-1.19) was expanded to accomodate new blocks and structures.</p>
+                    <p class="info">All blocks in a 7000 block radius <span class="sm-txt">(-7000, -7000 to 7000, 7000)</span> are <span class="bold">pre-generated</span> and only contain <span class="bold">1.18.2</span> and below blocks.</p>
+                    <p class="info">All blocks <span class="bold">outside</span> of the 7000 block radius are <span class="bold">not generated</span>, and will generate new 1.19 biomes and structures when loaded.</p>
+                    <p class="info">The server has had trouble in the past loading many new 1.19 chunks at once, such as flying with elytra. Expect slight to severe lag if you do this, and be considerate of other players who are online.</p>
+                    <p class="info">There is currently a portal in the shopping district to a small pre-loaded portion of 1.19 world.</p>
+                    <p class="info">Bundles are sold by an NPC in the NPC shop <span class="sm-txt">(small red and spruce shop straight ahead of portal)</span></p>
+        </div>
     </main>
 </body>
 </html>

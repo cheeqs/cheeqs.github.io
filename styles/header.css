@@ -79,3 +79,8 @@ li a {
 .block-div {
     display: block;
 }
+
+.header-fill {
+    width: 100%;
+    height: 43px;
+}
