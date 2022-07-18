@@ -15,6 +15,20 @@
     row-gap: 5px;
 }
 
+@media (max-width:600px) {
+    .container-main {
+        width: 100%;
+        justify-content: center;
+        top: 30%;
+    }
+
+    h1 {
+        top: 26%;
+    }
+
+
+}
+
 main {
     display: flex;
     position: relative;
