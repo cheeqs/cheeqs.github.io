@@ -45,3 +45,38 @@ button:active {
 h3 {
     font-size: 1.3vw;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-sm {
+    max-width: 15%;
+    height: auto;
+}
+
+.img-md {
+    max-width: 40%;
+    height: auto;
+}
+
+.landing-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.landing-text {
+    font-size: 72px;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 2px 2px #00000038;
+    font-family: 'Edu SA Beginner', cursive;
+}
